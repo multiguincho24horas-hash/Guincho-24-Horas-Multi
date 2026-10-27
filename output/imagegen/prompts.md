@@ -9,3 +9,10 @@ Use case: photorealistic-natural. Asset type: hero photograph-style illustration
 ## Guincho com moto
 
 Use case: photorealistic-natural. Asset type: original website service illustration, landscape 3:2. A realistic Brazilian compact white cab-over tow truck, navy-blue low hydraulic flatbed, amber safety beacon, transporting one black everyday street motorcycle upright and plausibly secured, at a clean paved small workshop forecourt in a residential São Paulo neighborhood. Brazilian urban buildings, tiled roofs, tropical greenery, no American truck styling, no long hood. Three-quarter view showing the entire platform and motorcycle, calm overcast daylight, natural authentic commercial photography look, credible mechanical geometry. No people, no brand logos, no letters, no watermark, no readable license plates, no company contacts. This is an original generated illustration, never documentary fleet evidence.
+
+
+## Heavy recovery and bus illustration
+
+Mode: built-in image_gen (no API/CLI). Final: public/images/guincho-multi-pesados.webp. Original PNG preserved locally at output/imagegen/guincho-multi-pesados.png.
+
+Prompt: Use case: photorealistic-natural. Create one original landscape 1536x1024 website image, realistic Brazilian heavy recovery scene. A modern white and navy blue cab-over heavy-duty rotator recovery truck, Brazilian style, parked in a spacious paved roadside service yard beside a white Brazilian intercity coach bus awaiting recovery. Both vehicles fully on the ground, no complicated lifting operation, plausible wheels and recovery equipment, amber warning beacons, no people. Three-quarter wide angle, both vehicles clearly visible with breathing room. Background understated Brazilian highway service area with tropical trees, cloudy soft daylight. Navy blue, white, subtle yellow safety details. Natural commercial photography aesthetic, realistic mechanical proportions. No American long-nose trucks. No text, logos, company names, license plate numbers, watermarks. This is an illustrative original image for Guincho 24 Horas Multi, not documentary fleet evidence.
