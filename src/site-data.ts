@@ -41,4 +41,4 @@ export function contactDestination(mobile:boolean, context:string, config = busi
   return number ? `https://wa.me/${number}?text=${encodeURIComponent(`Olá! Vim pelo site da Multi. Gostaria de consultar ${context}.`)}` : '/contato/';
 }
 
-for(const state of states) pages[state.path] = {title:`Guincho em ${state.name} (${state.uf}) | Guincho 24 Horas Multi`,description:`Precisa de guincho em ${state.name}? Consulte remoção de carros, motos e transporte agendado por parceiros. Orçamento pelo WhatsApp (11) 3042-0181.`};
+for(const state of states) pages[state.path] = {title:`Guincho ${state.location} (${state.uf}) | Guincho 24 Horas Multi`,description:`Precisa de guincho ${state.location}? Consulte remoção de carros, motos e transporte agendado por parceiros. Orçamento pelo WhatsApp (11) 3042-0181.`};
