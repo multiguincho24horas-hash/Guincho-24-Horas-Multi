@@ -24,11 +24,15 @@ Conta: Guincho 24 Horas Multi. Propriedade 560934852, conta 413512051, fluxo 162
 
 ## Imagens
 
-Somente imagens geradas para este projeto com a ferramenta integrada ImageGen. As duas imagens finais WebP estão em `public/images/`; PNGs originais em `output/imagegen/`, preservados localmente e ignorados pelo Git. Não são fotografias documentais de frota própria ou de parceiros. A página `/creditos/` explica a natureza ilustrativa. Nenhuma foto de terceiros é usada ou publicada.
+Somente imagens geradas para este projeto com a ferramenta integrada ImageGen. As três imagens finais WebP estão em `public/images/`; PNGs originais em `output/imagegen/`, preservados localmente e ignorados pelo Git. Não são fotografias documentais de frota própria ou de parceiros. A página `/creditos/` explica a natureza ilustrativa. Nenhuma foto de terceiros é usada ou publicada.
 
 Prompts finais e método em `output/imagegen/prompts.md`.
 
 ## SEO
 
-40 documentos HTML, incluindo 26 estados e Distrito Federal com orientações regionais em src/states.ts, três páginas de serviços, páginas institucionais, contato, PC e 404. Sitemap inclui apenas páginas indexáveis; PC, créditos e 404 têm noindex. Rotas usam caminhos reais; URLs legadas `#/…` são encaminhadas no navegador. HTML contém conteúdo, links e dados empresariais antes da execução de JavaScript. Search Console/submissão do sitemap não fazem parte desta integração. Implementação não garante posição ou indexação.
+43 documentos HTML, incluindo 26 estados e Distrito Federal com orientações regionais em src/states.ts, seis páginas de serviços, páginas institucionais, contato, PC e 404. Sitemap inclui apenas páginas indexáveis; PC, créditos e 404 têm noindex. Rotas usam caminhos reais; URLs legadas `#/…` são encaminhadas no navegador. HTML contém conteúdo, links e dados empresariais antes da execução de JavaScript. Search Console/submissão do sitemap não fazem parte desta integração. Implementação não garante posição ou indexação.
 
+
+## Contato e veículos por estado
+
+Cada estado inclui cinco seções para carros, motos, pesados, caminhões e ônibus. Contatos são links normais na mesma aba: celular usa wa.me/551130420181, computador usa /contatopc/. Não há window.open nem pop-up do site. A página de PC mostra o telefone e orienta usar o mesmo número no WhatsApp do celular. Botões de ligação usam tel:+551130420181. Ícone WhatsApp em SVG e botão flutuante. Serviços pesados exigem avaliação de parceiro e equipamento compatível.
