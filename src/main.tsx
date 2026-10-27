@@ -1,23 +1,7 @@
 import React from 'react';
-import { createRoot } from 'react-dom/client';
-import App from './App';
+import {createRoot,hydrateRoot} from 'react-dom/client';
+import Site from './Site';
 import './index.css';
-
-const rootElement = document.getElementById('root');
-
-if (!rootElement) {
-  const newRoot = document.createElement('div');
-  newRoot.id = 'root';
-  document.body.appendChild(newRoot);
-  createRoot(newRoot).render(
-    <React.StrictMode>
-      <App />
-    </React.StrictMode>
-  );
-} else {
-  createRoot(rootElement).render(
-    <React.StrictMode>
-      <App />
-    </React.StrictMode>
-  );
-}
+const root=document.getElementById('root')!;
+const site=<Site initialPath={window.location.pathname}/>;
+if(root.hasChildNodes())hydrateRoot(root,site);else createRoot(root).render(site);

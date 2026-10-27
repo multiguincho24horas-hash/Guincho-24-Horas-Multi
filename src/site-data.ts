@@ -1,0 +1,44 @@
+import {states} from './states';
+export const business = {
+  name: 'Guincho 24 Horas Multi', shortName: 'MULTI',
+  url: 'https://guincho24horasmulti.com',
+  whatsapp: '551130420181' as string | null, phone: '(11) 3042-0181' as string | null,
+  email: 'guincho24horas@gmail.com', cnpj: '20.441.377/0001-93',
+  street: 'Rua Marcelo Muller, 309', neighborhood: 'Jardim Independência',
+  city: 'São Paulo', state: 'SP', postalCode: '03223-060',
+};
+
+export const services = [
+  {slug:'guincho-para-carros', title:'Guincho para carros', tag:'PANE OU IMPREVISTO', description:'Seu carro parou? Consulte a remoção até a oficina, residência ou destino que você indicar.', icon:'car', details:['Informe o modelo do carro e o que aconteceu. Diga se as rodas estão livres, se há avarias e se o veículo está em garagem ou na rua. Essas informações ajudam a avaliar o equipamento necessário.', 'O orçamento considera o trajeto, o veículo e as condições de retirada. Origem, destino, disponibilidade do parceiro e condições comerciais são confirmados antes do atendimento.', 'Em São Paulo, informe também o bairro de origem. Para outras cidades, nossa rede de parceiros avalia a possibilidade de atendimento na região.']},
+  {slug:'guincho-para-motos', title:'Guincho para motos', tag:'CUIDADO EM CADA TRAJETO', description:'Transporte de motocicletas sob avaliação do modelo, da situação e do equipamento disponível.', icon:'bike', details:['Informe a marca e o modelo da moto, a situação em que ela se encontra e o destino desejado. A condição das rodas e o acesso ao local também são importantes na avaliação.', 'O transporte de moto depende de equipamento e acomodação compatíveis. A equipe ou o parceiro responsável confirma as condições de coleta e transporte antes de você contratar.', 'Consulte a retirada em São Paulo e a disponibilidade da rede parceira em outras localidades. Não há confirmação automática de atendimento pelo site.']},
+  {slug:'transporte-de-veiculos', title:'Transporte agendado', tag:'ORIGEM, DESTINO E DATA', description:'Planeje o deslocamento do veículo entre oficinas, residências e outras cidades.', icon:'truck', details:['Para programar o transporte, envie o tipo de veículo, a cidade e o bairro de origem, o destino e a data desejada. Avise se os locais possuem restrições de acesso ou de horário.', 'O agendamento é confirmado após avaliação da rota e da disponibilidade operacional. Valor, forma de pagamento, coleta e entrega são combinados na conversa.', 'Deslocamentos entre cidades e estados são consultados com a rede de parceiros. A possibilidade de transporte depende do trajeto e do veículo; não se trata de uma reserva automática.']},
+];
+export const nav = [ ['Início','/'], ['Serviços','/servicos/'], ['Onde atendemos','/area-de-atendimento/'], ['Como funciona','/como-funciona/'], ['Sobre','/sobre/'] ];
+export const pages: Record<string,{title:string;description:string;noindex?:boolean}> = {
+  '/': {title:'Guincho em São Paulo e rede nacional | Guincho 24 Horas Multi',description:'Guincho para carros, motos e transporte agendado. Base no Jardim Independência, São Paulo, e atendimento nacional por parceiros. Consulte sua região.'},
+  '/servicos/': {title:'Serviços de guincho e transporte de veículos | Multi',description:'Consulte guincho para carro, moto, remoção por pane e transporte agendado. Veja as informações necessárias para solicitar um orçamento.'},
+  '/area-de-atendimento/': {title:'Guincho em São Paulo e atendimento nacional por parceiros | Multi',description:'Base na Rua Marcelo Muller, 309, Jardim Independência, São Paulo. Atendimento em outras cidades e estados por rede de parceiros, sob disponibilidade.'},
+  '/como-funciona/': {title:'Como pedir guincho e solicitar orçamento | Multi',description:'Saiba como solicitar guincho: informe o veículo, origem e destino, receba as condições e confirme o atendimento com a equipe.'},
+  '/sobre/': {title:'Sobre a Guincho 24 Horas Multi | São Paulo – SP',description:'Conheça a Guincho 24 Horas Multi, CNPJ 20.441.377/0001-93. Base em São Paulo e rede de parceiros para atendimento nacional.'},
+  '/contato/': {title:'Contato e endereço | Guincho 24 Horas Multi',description:'Fale com a Multi pelo e-mail guincho24horas@gmail.com. Endereço: Rua Marcelo Muller, 309, Jardim Independência, São Paulo – SP.'},
+  '/contatopc/': {title:'Atendimento por telefone | Guincho 24 Horas Multi',description:'Consulte o canal de atendimento da Guincho 24 Horas Multi no computador.',noindex:true},
+  '/privacidade/': {title:'Política de privacidade | Guincho 24 Horas Multi',description:'Entenda como funciona a navegação e o contato comercial no site da Guincho 24 Horas Multi.'},
+  '/creditos/': {title:'Sobre as imagens | Guincho 24 Horas Multi',description:'Ilustrações de guinchos brasileiros criadas com inteligência artificial para este projeto.',noindex:true},
+  '/404/': {title:'Página não encontrada | Guincho 24 Horas Multi',description:'Encontre os serviços e canais de contato da Multi.',noindex:true},
+};
+for (const s of services) pages[`/servicos/${s.slug}/`] = {title:`${s.title} em São Paulo e rede parceira | Multi`,description:s.description+' Base em São Paulo e consulta de atendimento nacional por parceiros.'};
+export const faqs = [
+ ['Vocês atendem em todo o Brasil?','Trabalhamos com uma rede nacional de parceiros. A possibilidade de atendimento é confirmada conforme a cidade, o trajeto, o veículo e a disponibilidade do parceiro. Nossa base principal fica em São Paulo; cobertura não significa filial em cada localidade.'],
+ ['Quanto custa um guincho?','O valor depende da origem, do destino, do tipo e da condição do veículo e do acesso para a retirada. Envie essas informações para consultar as condições antes de confirmar o serviço.'],
+ ['Posso agendar o transporte do veículo?','Sim, você pode consultar um transporte para a data desejada. O agendamento depende da avaliação da rota e da disponibilidade, com coleta e entrega combinadas no contato.'],
+ ['O que preciso informar para pedir guincho?','Informe o tipo de veículo, o que aconteceu, a origem, o destino e eventuais dificuldades de acesso, como subsolo ou garagem estreita. Não é necessário fazer cadastro no site.'],
+ ['Qual é o horário de atendimento?','O horário e a disponibilidade para a sua solicitação serão informados pelo canal comercial. O nome da marca é Guincho 24 Horas Multi; o atendimento específico depende da confirmação da equipe ou do parceiro.'],
+];
+export function normalizePath(path:string) { const p=path.split('?')[0].split('#')[0]; if(p==='/area-atendimento'||p==='/area-atendimento/')return '/area-de-atendimento/'; return p==='/'?'/':p.replace(/\/+$/,'')+'/'; }
+export function contactDestination(mobile:boolean, context:string, config = business) {
+  if(!mobile) return '/contatopc/';
+  const number=config.whatsapp?.replace(/\D/g,'');
+  return number ? `https://wa.me/${number}?text=${encodeURIComponent(`Olá! Vim pelo site da Multi. Gostaria de consultar ${context}.`)}` : '/contato/';
+}
+
+for(const state of states) pages[state.path] = {title:`Guincho em ${state.name} (${state.uf}) | Guincho 24 Horas Multi`,description:`Precisa de guincho em ${state.name}? Consulte remoção de carros, motos e transporte agendado por parceiros. Orçamento pelo WhatsApp (11) 3042-0181.`};
