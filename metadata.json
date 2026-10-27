@@ -1,0 +1,6 @@
+{
+  "name": "Guincho 24 Horas Multi",
+  "description": "Site institucional do Guincho 24 Horas Multi. Atendimento para remoção, transporte de veículos e motos sob consulta de disponibilidade.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
