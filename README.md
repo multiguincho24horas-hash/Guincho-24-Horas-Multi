@@ -14,7 +14,7 @@ Cloudflare: Node 22, build `npm run build`, saída `dist`. Não configurar fallb
 
 ## Dados comerciais
 
-`src/site-data.ts` centraliza contato, empresa, rotas e serviços. Número de telefone e WhatsApp estão nulos por solicitação do proprietário. Quando fornecidos, usar código do país + DDD + número. Computador leva a `/contatopc/`; celular abre WhatsApp diretamente na mesma aba com contexto. Sem número, o celular leva a `/contato/`. A página de PC não tem botão de copiar nem de abrir WhatsApp. A base principal em São Paulo é diferenciada da cobertura por rede nacional de parceiros.
+`src/site-data.ts` centraliza contato, empresa, rotas e serviços. Telefone e WhatsApp comercial: +55 11 3042-0181. Computador leva a `/contatopc/`; celular abre WhatsApp diretamente na mesma aba com contexto. Sem número, o celular leva a `/contato/`. A página de PC mostra telefone clicável e acesso opcional ao WhatsApp. A base principal em São Paulo é diferenciada da cobertura por rede nacional de parceiros.
 
 ## Google Analytics
 
@@ -30,4 +30,5 @@ Prompts finais e método em `output/imagegen/prompts.md`.
 
 ## SEO
 
-13 documentos HTML, incluindo três páginas de serviços, páginas institucionais, contato, PC e 404. Sitemap inclui apenas páginas indexáveis; PC, créditos e 404 têm noindex. Rotas usam caminhos reais; URLs legadas `#/…` são encaminhadas no navegador. HTML contém conteúdo, links e dados empresariais antes da execução de JavaScript. Search Console/submissão do sitemap não fazem parte desta integração. Implementação não garante posição ou indexação.
+40 documentos HTML, incluindo 26 estados e Distrito Federal com orientações regionais em src/states.ts, três páginas de serviços, páginas institucionais, contato, PC e 404. Sitemap inclui apenas páginas indexáveis; PC, créditos e 404 têm noindex. Rotas usam caminhos reais; URLs legadas `#/…` são encaminhadas no navegador. HTML contém conteúdo, links e dados empresariais antes da execução de JavaScript. Search Console/submissão do sitemap não fazem parte desta integração. Implementação não garante posição ou indexação.
+
