@@ -1,3 +1,4 @@
+import {localMeta} from './sao-paulo';
 import {states} from './states';
 export const business = {
   name: 'Guincho 24 Horas Multi', shortName: 'MULTI',
@@ -43,3 +44,5 @@ export function contactDestination(mobile:boolean, context:string, config = busi
 }
 
 for(const state of states) pages[state.path] = {title:`Guincho ${state.location} (${state.uf}) | Guincho 24 Horas Multi`,description:`Precisa de guincho ${state.location}? Carros, motos, caminhões, ônibus e pesados sob avaliação por parceiros. Orçamento pelo WhatsApp (11) 3042-0181.`};
+
+for(const meta of localMeta()) pages[meta.path]={title:meta.title,description:meta.description};
